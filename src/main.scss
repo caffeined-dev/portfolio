@@ -1,0 +1,26 @@
+.Main {
+    min-height: 100vh;
+    background-color: lightcoral;
+
+    .logo {
+        height: 100px;
+        position: fixed;
+        left: calc(100vw - 115px);
+        top: calc(100vh - 100px);
+    }
+    .logo:hover {
+        animation: bounce 1s infinite; 
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    } 25% {
+        transform: translateY(0px);
+    } 50% {
+        transform: translateY(-3px);
+    } 75% {
+        transform: translateY(1px);
+    }
+}
