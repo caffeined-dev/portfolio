@@ -1,0 +1,47 @@
+@import '../../css/custom.scss';
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-scrolled {
+    width: 100%;
+    background-color: $lightgray;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-side {
+    border-bottom: 1px solid $offwhitetransparent;
+    height: 70px;
+    flex-grow: 1;
+}
+
+.header-middle {
+    width: 100px;
+    height: 70px;
+}
+
+.header-middle-scrolled {
+    width: 100px;
+    height: 70px;
+    border-bottom: 1px solid $offwhitetransparent;
+}
+
+.header-item {
+
+}
+
+.header-logo-scrolled {
+    position: absolute;
+    top: 10px;
+    height: 55px;
+}
+
+.header-logo {
+    position: absolute;
+    top: 10px;
+    height: 70px;
+}

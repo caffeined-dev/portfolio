@@ -1,0 +1,13 @@
+@import '../../css/custom.scss';
+
+
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-caption {
+    background-color: $darkgray;
+    opacity: 0.9;
+    border-radius: 10px;
+}

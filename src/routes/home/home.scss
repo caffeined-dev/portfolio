@@ -1,0 +1,28 @@
+@import '../../css/custom.scss';
+
+.section {
+    height: 300px;
+    border-bottom: 1px solid $offwhitetransparent;
+}
+
+.section-long {
+    height: 600px;
+    border-bottom: 1px solid $offwhitetransparent;
+}
+
+.section-content {
+    position: relative;
+    background-color: $darkgray;
+    border-radius: 10px;
+    border: 1px solid $offwhitetransparent;
+    bottom: 150px;
+    min-height: 300px;
+}
+
+.section-column {
+    flex-grow: 1;
+}
+
+.divider {
+    border-left: 1px solid $offwhitetransparent;
+}

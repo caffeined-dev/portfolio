@@ -1,0 +1,17 @@
+@import './variables.scss';
+@import './common.scss';
+
+// bootstrap
+$theme-colors: (
+    "gray-dark": $darkgray,
+    "gray": $gray,
+    "white": $white,
+);
+
+$body-bg: $darkgray;
+$body-color: $offwhite;
+$font-family-base: 'Source-Code-Pro', monospace;
+$font-weight-normal: 300;
+
+
+@import "~bootstrap/scss/bootstrap";

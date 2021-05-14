@@ -1,10 +1,20 @@
+@import "./css/custom.scss";
+@import './css/mediaqueries.scss';
+
 .Main {
-    min-height: 100vh;
-    background-color: #eae0c8;
+
+    .v-spacer {
+        height: 150px;
+    }
+
+    .page {
+        min-height: calc(100vh - 250px);
+    }
+
     .logo {
         height: 100px;
         position: fixed;
-        left: calc(100vw - 115px);
+        left: calc(100vw - 130px);
         top: calc(100vh - 100px);
     }
     .logo:hover {
@@ -13,7 +23,7 @@
 }
 
 @keyframes bounce {
-    0% {
+    0% {    
         transform: translateY(0px);
     } 25% {
         transform: translateY(0px);

@@ -1,0 +1,13 @@
+@import './custom.scss';
+
+// react-router-dom
+
+.link-override {
+    text-decoration: none;
+    color: $offwhite;
+}
+
+.link-override:hover {
+    text-decoration: none;
+    color: $offwhite;
+}

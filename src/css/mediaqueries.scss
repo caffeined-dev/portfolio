@@ -1,0 +1,17 @@
+@media screen and (min-width: 1200px) {
+    .media-width {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+    .media-width {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .media-width {
+        width: 100%;
+    }
+}
