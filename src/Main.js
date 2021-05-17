@@ -2,7 +2,7 @@ import React from 'react';
 import './main.scss';
 import Header from './layout/header/header';
 import Footer from './layout/footer/footer';
-import { Switch, BrowserRouter, Route } from 'react-router-dom';
+import { Switch, HashRouter, Route } from 'react-router-dom';
 import Home from './routes/home/home';
 import Games from './routes/games/games';
 import Projects from './routes/projects/projects';
@@ -10,7 +10,7 @@ import Contact from './routes/contact/contact';
 
 export default function Main() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="Main">
         <Header />
         <div className="v-spacer"></div>
@@ -25,7 +25,7 @@ export default function Main() {
         <Footer />
         <img className="logo" src="./catlogo.png" alt="logo" />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

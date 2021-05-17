@@ -1,0 +1,16 @@
+@import '../../../../css/custom.scss';
+
+.tile {
+    width: 10%;
+    border: 1px solid $offwhitetransparent;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.tile:hover {
+    background-color: $info;
+}
+
+.divider {
+    border-bottom: 1px solid $offwhitetransparent;
+}

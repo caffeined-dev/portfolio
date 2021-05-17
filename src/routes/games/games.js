@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { Container, Card, Button } from 'react-bootstrap';
 import './games.scss';
-import Connect4 from './modules/Connect 4/connect4';
 import Typing from './modules/Typing Test/typing';
+import Emojijeweled from './modules/Emojijeweled/emojijeweled';
 
 
-const NAMES = ["Typing Test", "Connect 4"];
+const NAMES = ["Typing Test", "Emoji-Jeweled"];
 
 const IMAGES = [
     "https://images.unsplash.com/photo-1555532538-dcdbd01d373d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2031&q=80",
-    "https://live.staticflickr.com/3476/3315537273_e597f1387d_b.jpg"
+    "https://puu.sh/HGKGO/3266678b61.png"
 ];
 
 
@@ -20,7 +20,7 @@ export default function Games() {
 
 
     let [module, setModule] = useState(-1);
-    let MODULES = [<Typing />, <Connect4 />];
+    let MODULES = [<Typing />, <Emojijeweled />];
 
 
     return (
@@ -36,7 +36,7 @@ function Modules({setModule}) {
     return (
         <Container fluid className="w-100 d-flex flex-column align-items-center">
             <h3 className="p-5">Feel free to try out these games made in React</h3>
-            <div className="modules media-width d-flex justify-content-between">
+            <div className="modules media-width d-flex justify-content-around flex-wrap">
                 {NAMES.map((v, i) => <Module key={i} index={i} setModule={setModule}/>)}
             </div>
         </Container>
@@ -46,8 +46,8 @@ function Modules({setModule}) {
 function Module({ index, setModule }) {
 
     return (
-        <Card className="module">
-            <Card.Img variant="top" className="module-image" src={IMAGES[index]} />
+        <Card className="module mb-5">
+            <Card.Img variant="top" className="module-image h-75" src={IMAGES[index]} />
             <Card.Body className="d-flex flex-column align-items-start justify-content-end">
                 <Card.Title className="text-muted">{NAMES[index]}</Card.Title>
                 <Button variant="info" onClick={() => setModule(index)}>Play</Button>

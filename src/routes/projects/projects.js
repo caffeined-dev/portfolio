@@ -50,7 +50,8 @@ export default function Projects() {
             </Carousel>
             <h2 className="m-5">@Me</h2>
             <p className="media-width text-center">
-                A lot of my time outside of work is spent working with students on their own apps or answering any additional questions they may have outside of class. While it is 
+                A lot of my time outside of work is spent working with students on their own apps or answering any additional questions they may have outside of class. I also like to create things that
+                help me with games I play as well.
             </p>
             <Carousel interval={null} className="media-width mb-5">
                 <Carousel.Item className="carousel-item">
