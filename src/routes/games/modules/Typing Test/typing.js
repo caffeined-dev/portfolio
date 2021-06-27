@@ -10,6 +10,7 @@ export default function Typing() {
     let [accuracy, setAccuracy] = useState(new Array(100).fill(0));
     let [current, setCurrent] = useState(0);
     let [word, setWord] = useState("");
+    let [total, setTotal] = useState(0);
     let [time, setTime] = useState(0);
     let [started, setStarted] = useState(false);
     let [result, setResult] = useState(0);
@@ -31,6 +32,7 @@ export default function Typing() {
             setStarted(true);
 
         if(event.target.value[event.target.value.length - 1] === ' ') {
+            setTotal(total + event.target.value.length);
             setCurrent(current + 1);
             let temp = [...accuracy];
             if(word === words[current])
@@ -52,7 +54,7 @@ export default function Typing() {
     function checkResult() {
         let cnt = 0;
         accuracy.forEach((v, i) => v === 1 ? cnt++ : undefined);
-        setResult(Math.floor(60 * cnt / time));
+        setResult(Math.floor((total / 5) / (time / 60) * (cnt / 100)));
     }
 
     function reset() {
